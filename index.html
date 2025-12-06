@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="#" id="nav-home">Home</a>
+            <a href="#" id="nav-learn">Learn</a>
+            <a href="#" id="nav-login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Home Screen -->
+    <div id="home-screen" class="home-screen">
+        <div class="hero-content">
+            <h1>Quiz Website</h1>
+            <p class="hero-subtitle">Test and learn programming easily! Start your journey to improve your coding skills with interactive quizzes and comprehensive learning resources for all levels.</p>
+            <button id="home-start-btn" class="start-action home-start-btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Login Screen -->
+        <div id="login-screen">
+            <h1>Programming Quiz</h1>
+            <p class="login-subtitle">Login to Continue</p>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" id="login-btn">Login</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="#" id="signup-toggle">Sign up here</a></p>
+        </div>
+
+        <!-- Signup Screen -->
+        <div id="signup-screen" style="display: none;">
+            <h1>Programming Quiz</h1>
+            <p class="login-subtitle">Create New Account</p>
+            <form id="signup-form" class="login-form">
+                <div class="form-group">
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" placeholder="Enter a password" required>
+                </div>
+                <button type="submit" id="signup-btn">Sign Up</button>
+            </form>
+            <p class="signup-link">Already have an account? <a href="#" id="login-toggle">Login here</a></p>
+        </div>
+
+        <!-- Learn Programming Page -->
+        <div id="learn-page" style="display: none;">
+            <h1>Learn Programming</h1>
+            <p class="login-subtitle">Choose a language to start learning</p>
+                <div class="learn-cards">
+                    <div class="learn-card">
+                        <h3>HTML</h3>
+                        <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank">📺 Video Course</a><br>
+                        <a href="https://www.w3schools.com/html/" target="_blank">📘 Book / Website</a>
+                    </div>
+                    <div class="learn-card">
+                        <h3>CSS</h3>
+                        <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" target="_blank">📺 Video Course</a><br>
+                        <a href="https://www.w3schools.com/css/" target="_blank">📘 Book / Website</a>
+                    </div>
+                    <div class="learn-card">
+                        <h3>JavaScript</h3>
+                        <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg" target="_blank">📺 Video Course</a><br>
+                        <a href="https://eloquentjavascript.net/" target="_blank">📘 Free Book</a>
+                    </div>
+                    <div class="learn-card">
+                        <h3>Python</h3>
+                        <a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">📺 Video Course</a><br>
+                        <a href="https://automatetheboringstuff.com/" target="_blank">📘 Free Book</a>
+                    </div>
+                    <div class="learn-card">
+                        <h3>C++</h3>
+                        <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" target="_blank">📺 Video Course</a><br>
+                        <a href="https://www.learncpp.com/" target="_blank">📘 Book / Website</a>
+                    </div>
+                    <div class="learn-card">
+            <h3>C</h3>
+            <a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" target="_blank">📺 Video Course</a><br>
+            <a href="https://www.learn-c.org/" target="_blank">📘 Book / Website</a>
+        </div>
+        <div class="learn-card">
+            <h3>C#</h3>
+            <a href="https://www.youtube.com/watch?v=GhQdlIFylQ8" target="_blank">📺 Video Course</a><br>
+            <a href="https://www.learncs.org/" target="_blank">📘 Book / Website</a>
+        </div>
+        <div class="learn-card">
+            <h3>Java</h3>
+            <a href="https://www.youtube.com/watch?v=eIrMbAQSU34" target="_blank">📺 Video Course</a><br>
+            <a href="https://www.learnjavaonline.org/" target="_blank">📘 Book / Website</a>
+        </div>
+        <div class="learn-card">
+            <h3>PHP</h3>
+            <a href="https://www.youtube.com/watch?v=OK_JCtrrv-c" target="_blank">📺 Video Course</a><br>
+            <a href="https://www.learn-php.org/" target="_blank">📘 Book / Website</a>
+        </div>
+        <div class="learn-card">
+            <h3>Swift</h3>
+            <a href="https://www.youtube.com/watch?v=comQ1-x2a1Q" target="_blank">📺 Video Course</a><br>
+            <a href="https://www.hackingwithswift.com/" target="_blank">📘 Book / Website</a>
+        </div>
+        <div class="learn-card">
+            <h3>Flutter</h3>
+            <a href="https://www.youtube.com/watch?v=VPvVD8t02U8" target="_blank">📺 Video Course</a><br>
+            <a href="https://flutter.dev/docs" target="_blank">📘 Book / Website</a>
+        </div>
+        <div class="learn-card">
+            <h3>Ruby</h3>
+            <a href="https://www.youtube.com/watch?v=t_ispmWmdjY" target="_blank">📺 Video Course</a><br>
+            <a href="https://www.learnrubyonline.org/" target="_blank">📘 Book / Website</a>
+        </div>
+                </div>
+        </div>
+
+        <!-- Start Screen -->
+        <div id="start-screen" style="display: none;">
+            <h1>Programming Quiz</h1>
+            <div class="form-group">
+                <label for="topic">Select Topic:</label>
+                <select id="topic">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="python">Python</option>
+                    <option value="cpp">C++</option>
+                    <option value="c">C</option>
+                    <option value="c#">C#</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="swift">Swift</option>
+                    <option value="flutter">Flutter</option>
+                    <option value="ruby">Ruby</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question-count">Number of Questions:</label>
+                <select id="question-count">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time-limit">Time:</label>
+                <select id="time-limit">
+                    <option value="0.5" selected>30 seconds</option>
+                    <option value="1">1 minute</option>
+                    <option value="2">2 minutes</option>
+                    <option value="5">5 minutes</option>
+                </select>
+            </div>
+            <div class="start-actions">
+                <button id="start-quiz-btn" class="start-action">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" style="display: none;">
+            <div class="quiz-header">
+                <div class="question-counter" id="question-counter">1 of 10</div>
+                <div class="timer" id="timer">15:00</div>
+            </div>
+            <div class="question-container">
+                <div id="question"></div>
+                <div id="options"></div>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <div class="result-content">
+                <p>Your Score: <span id="final-score"></span></p>
+                <p>Percentage: <span id="percentage"></span></p>
+            </div>
+            <button class="restart-btn" id="restart-btn">Take Another Quiz</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
